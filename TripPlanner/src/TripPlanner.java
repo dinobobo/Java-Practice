@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class TripPlanner {
     public static void main(String[] args){
         greet();
-        TimeBudget();
+        Budget();
     }
     public static void greet(){
         Scanner input = new Scanner(System.in);
@@ -12,11 +12,11 @@ public class TripPlanner {
         System.out.print("Hello " + name + ", where are you travelling to?");
         String place = input.next();
         System.out.println(place + " sounds like a wonderful place!");
-        System.out.println("*****************************");
+        System.out.println("*****************************\n\n");
     }
-    public static void TimeBudget(){
+    public static void Budget(){
         Scanner input = new Scanner(System.in);
-        System.out.print("\n\nHow many days are you going to stay?");
+        System.out.print("How many days are you going to stay?");
         int time = input.nextInt();
         System.out.print("How much money, in USD, are you planning to spend?");
         int money = input.nextInt();
@@ -32,5 +32,15 @@ public class TripPlanner {
          + money/(double) time + " USD");
         System.out.println("Your total budget in " + TripDst + " is " + money*(double) DollarConv
         + " " + TripDst + ", which per days is " + money*DollarConv/time + TripDst);
+        System.out.println("*****************************\n\n");
+    }
+    public static void Time(){
+        Scanner input = new Scanner(System.in);
+    }
+    public static void CountryArea(){
+        Scanner input = new Scanner(System.in);
+    }
+    public static void Distance(){
+        Scanner input = new Scanner(System.in);
     }
 }
