@@ -1,9 +1,8 @@
 import java.util.Scanner;
 public class MazeRunner {
+    public static Maze myMap = new Maze();
     public static void main(String [] args) {
-        Maze myMap = new Maze();
         intro();
-        myMap.printMap();
         while (!myMap.didIWin()) {
             String move = userMove();
             if (move.equals("R")) {
@@ -12,6 +11,7 @@ public class MazeRunner {
                     myMap.printMap();
                 } else {
                     System.out.println("Sorry, you've hit a wall");
+                    myMap.printMap();
                 }
             }else if (move.equals("L")) {
                 if (myMap.canIMoveLeft()) {
@@ -19,6 +19,7 @@ public class MazeRunner {
                     myMap.printMap();
                 } else {
                     System.out.println("Sorry, you've hit a wall");
+                    myMap.printMap();
                 }
             }else if (move.equals("U")) {
                 if (myMap.canIMoveUp()) {
@@ -26,6 +27,7 @@ public class MazeRunner {
                     myMap.printMap();
                 } else {
                     System.out.println("Sorry, you've hit a wall");
+                    myMap.printMap();
                 }
             }else{
                 if (myMap.canIMoveDown()) {
@@ -33,6 +35,7 @@ public class MazeRunner {
                     myMap.printMap();
                 } else {
                     System.out.println("Sorry, you've hit a wall");
+                    myMap.printMap();
                 }
             }
         }
@@ -40,7 +43,7 @@ public class MazeRunner {
     public static void intro(){
         System.out.println("Welcome to Maze Runner!");
         System.out.println("Here is your current position:");
-
+        myMap.printMap();
     }
     public static String userMove(){
         Scanner input = new Scanner(System.in);
