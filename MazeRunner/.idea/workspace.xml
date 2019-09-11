@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f7d6f782-c718-4050-ac98-412339249480" name="Default Changelist" comment="" />
+    <list default="true" id="f7d6f782-c718-4050-ac98-412339249480" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/MazeRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Crypto/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Crypto/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,9 +90,6 @@
       <pane id="PackagesPane" />
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -130,7 +130,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="1" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
