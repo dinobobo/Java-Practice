@@ -1,5 +1,6 @@
 package model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Transcript {
@@ -13,6 +14,8 @@ public class Transcript {
     public Transcript(String studentName, int studentID){
         this.studentName = studentName;
         this.studentID = studentID;
+        this.grades = new ArrayList<>();
+        this.courses = new ArrayList<>();
     }
     public void addGrade(String course, double grade){
         this.grades.add(grade);
@@ -29,10 +32,11 @@ public class Transcript {
     //MODIFIES: this
     //EFFECTS: Print out the transcript
     public void printTranscript(){
-        System.out.print(this.studentName);
+        System.out.print(this.studentName + "  ");
         for(String course: this.courses){
-            System.out.print(this.getCourseAndGrade(course) + "  ");
+            System.out.print(this.getCourseAndGrade(course) + ",  ");
         }
+        System.out.println("\nGPA: " + this.getGPA());
     }
 
     public double getCourseGrade(String course){

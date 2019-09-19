@@ -7,8 +7,8 @@ public class Main {
 
         t1.addGrade("Obedience1", 3.8);
         t1.addGrade("Obedience2", 4.0);
-
-        System.out.println(t1.getStudentName() + ": ");
-        t1.printTranscript();;
+        t1.addGrade("badBoiClass", 5.0);
+        t1.printTranscript();
+        t2.printTranscript();
     }
 }
